@@ -314,28 +314,7 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JPasswordField txtpw;
     private javax.swing.JTextField txtuser;
     // End of variables declaration//GEN-END:variables
-/*
-private void tampil(){
-     try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_zaplon", "root", "");
-            ResultSet as = conn.createStatement().executeQuery("select * from admin where "
-                    + "namaadmin='" + txtuser.getText() + "' and password='" + String.valueOf(txtpw.getPassword()) + "'");
-            System.out.println("username : "+txtuser.getText());
-            System.out.println("password : "+String.valueOf(txtpw.getPassword()));
-            if (as.next()) {
-                
-                login.setUserLogin("setUserLogin : "+as.getString("namaadmin"));
-                new menuutama().setVisible(true);
-                dispose();
-            } else {
-                JOptionPane.showMessageDialog(rootPane, "Username dan Password Salah");
-            }
-        } catch (SQLException ex) {
-          ex.printStackTrace();
-        }
-}
-*/
-    
+
 void login(){
         String username  = txtuser.getText();
         char[] password = txtpw.getPassword();
